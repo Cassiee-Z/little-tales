@@ -21,12 +21,12 @@ function show(i,changeHash=true) {
   current=i;const id=++request;
   previous.disabled=i===0;next.disabled=i===pages.length-1;select.value=String(i);
   updateText(i);paper.setAttribute('aria-busy','true');status.hidden=true;
-  const source=`pages/page-${String(i+1).padStart(2,'0')}-line.jpg`;
+  const source=`pages/page-${String(i+1).padStart(2,'0')}-sketch.jpg`;
   const image=new Image();image.onload=()=>{if(id!==request)return;img.src=source;img.alt=`第${i+1}页：${pages[i].alt}`;paper.setAttribute('aria-busy','false');status.hidden=true;};
   image.onerror=()=>{if(id!==request)return;paper.setAttribute('aria-busy','false');status.textContent='这一页暂未加载成功，请重新选择页码，或下载 PDF 阅读。';status.hidden=false;};
   image.src=source;
   if(changeHash)history.replaceState(null,'',`#page=${i+1}`);
-  if(i+1<pages.length){const preload=new Image();preload.src=`pages/page-${String(i+2).padStart(2,'0')}-line.jpg`;}
+  if(i+1<pages.length){const preload=new Image();preload.src=`pages/page-${String(i+2).padStart(2,'0')}-sketch.jpg`;}
 }
 previous.addEventListener('click',()=>show(current-1));next.addEventListener('click',()=>show(current+1));
 select.addEventListener('change',()=>show(Number(select.value)));
