@@ -11,3 +11,5 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 
 h1 span{display:block}
+
+.book-invitation{display:flex;justify-content:space-between;align-items:center;gap:25px;padding:22px 25px;margin-top:30px;background:var(--surface);border-radius:12px}.book-invitation strong{font-size:17px;font-weight:800}.book-invitation p{font-size:13px;margin-top:4px;color:var(--muted)}.book-invitation a{font-size:14px;white-space:nowrap;font-weight:800}@media(max-width:767px){.book-invitation{display:block;padding:20px}.book-invitation a{display:inline-block;margin-top:13px}.book-invitation strong{font-size:16px}.site-header nav{gap:13px}}

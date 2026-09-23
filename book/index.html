@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>皮普和小桥 | 中英双语绘本 | Little Tales</title>
+  <meta name="description" content="在线翻阅16页原创儿童双语绘本《皮普和小桥》。一个关于开口求助与合作的小故事，适合4-6岁亲子共读。附PDF下载与配套英文动画。">
+  <meta name="theme-color" content="#f8f3e8">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="皮普和小桥 | 中英双语绘本">
+  <meta property="og:description" content="和皮普、波波一起搭一座桥，学会开口求助。16页双语绘本，支持在线翻阅。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://cassiee-z.github.io/little-tales/book/pages/page-01.jpg">
+  <link rel="icon" href="../assets/favicon.png">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="book.css">
+  <link rel="preload" href="pages/page-01.jpg" as="image">
+  <script src="book.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#reader">跳到绘本</a>
+  <header class="site-header wrap">
+    <a class="brand" href="../">Little Tales<span>儿童英语内容作品</span></a>
+    <nav aria-label="作品导航"><a href="../#watch">看动画</a><a href="pip-and-the-little-bridge.pdf" download="皮普和小桥_中英双语绘本.pdf">下载 PDF</a></nav>
+  </header>
+  <main class="book-main wrap">
+    <div class="book-heading"><h1>皮普和小桥</h1><p>16 页中英双语绘本，适合 4-6 岁亲子共读。</p></div>
+    <div class="reading-layout">
+      <section id="reader" class="reader" aria-label="绘本阅读器">
+        <div class="paper" id="paper" aria-busy="false">
+          <img id="book-page" src="pages/page-01.jpg" width="1440" height="1200" alt="绘本封面：皮普和波波站在小桥两旁，小玩具鸭在桥上。" fetchpriority="high">
+        </div>
+        <p id="load-status" role="status" class="load-status" hidden></p>
+        <div class="reader-controls">
+          <button id="previous" type="button" disabled>上一页</button>
+          <label for="page-select" class="sr-only">选择绘本页码</label>
+          <div class="page-position"><select id="page-select" aria-label="选择绘本页码"><option value="0">封面</option></select><span aria-hidden="true">/ 16</span></div>
+          <button id="next" type="button">下一页</button>
+        </div>
+        <p class="reader-help">可以左右滑动翻页，或使用键盘方向键。</p>
+        <noscript><p>浏览器未启用 JavaScript。您可以<a href="pip-and-the-little-bridge.pdf">直接阅读 PDF 绘本</a>。</p></noscript>
+      </section>
+      <aside class="page-notes" aria-label="本页文字与共读提示">
+        <h2 id="page-name" aria-live="polite" aria-atomic="true">封面</h2>
+        <div id="page-text" class="page-text"><p lang="en">Pip and the Little Bridge</p><p lang="zh-CN">皮普和小桥</p></div>
+        <div class="read-together"><h3>一起读一读</h3><p id="reading-tip">先看看封面：这两个朋友准备一起做什么？</p></div>
+        <details class="about-book"><summary>关于这本绘本</summary><p>故事以搭积木为情境，让“求助、合作、感谢”在角色的行动中发生。英文短句配中文适配，末尾设有跟读与开放式搭建问题。</p><p>本书与同名动画共用角色和故事内核，针对翻页阅读重新编排文字与画面。</p><p class="small">原创双语绘本，采用 AI 辅助创作与程序绘图。</p></details>
+      </aside>
+    </div>
+  </main>
+  <footer class="wrap"><p>Little Tales</p><span>读故事，也练习表达。</span></footer>
+  <script type="application/json" id="book-data">[{"kind": "cover", "en": ["Pip and the", "Little Bridge"], "zh": "皮普和小桥", "alt": "皮普和波波站在小桥两旁，小玩具鸭在桥上。"}, {"kind": "meet", "en": ["Pip has a box of blocks.", "And a little toy duck."], "zh": "皮普有一盒彩色积木，还有一只小玩具鸭。", "alt": "皮普坐在地垫旁，一盒彩色积木和玩具鸭摆在面前。"}, {"kind": "idea", "en": ["“I’ll build you a bridge,” says Pip.", "“Then you can cross!”"], "zh": "“我要给你搭一座桥，”皮普说，“这样，你就能过去啦！”", "alt": "皮普看着蓝布做的小河，想象小鸭过桥的样子。"}, {"kind": "stack", "en": ["One block. Two blocks.", "Up, up, up!"], "zh": "一块积木，两块积木。搭呀，搭呀，搭高啦！", "alt": "皮普把积木一块块叠高，最上面的一块有些倾斜。"}, {"kind": "fall", "en": ["Wobble, wobble...", "CRASH!"], "zh": "晃呀，晃呀……哗啦！", "alt": "积木向两旁倒下，皮普惊讶地张开嘴。"}, {"kind": "sad", "en": ["Pip tries again.", "Down they go again.", "“I can’t do it.”"], "zh": "皮普又试了一次。积木还是倒了。“我搭不好。”", "alt": "皮普低着头，地垫上散着倒下的积木。"}, {"kind": "hello", "en": ["Bo comes over.", "“Do you need some help?”"], "zh": "波波走了过来。“你需要帮忙吗？”", "alt": "波波走到皮普身边，抬起一只手，友善地询问。"}, {"kind": "ask", "en": ["“Yes, please,” says Pip.", "“Can you help me?”"], "zh": "“需要，谢谢！”皮普说，“你能帮帮我吗？”", "alt": "皮普看着波波，主动开口求助。"}, {"kind": "together", "en": ["“Of course!” says Bo.", "“Let’s try together.”"], "zh": "“当然！”波波说，“我们一起试试。”", "alt": "波波伸出手，皮普也准备一起动手搭桥。"}, {"kind": "plan", "en": ["Big blocks at the bottom.", "A long block on top."], "zh": "大积木放在下面，长积木放在上面。", "alt": "两块大积木作为桥墩，一块长积木作为桥面。"}, {"kind": "hold", "en": ["“You hold this side.", "I’ll hold that side.”", "“One, two, three!”"], "zh": "“你扶这边，我扶那边。”“一、二、三！”", "alt": "皮普和波波分别扶住长积木的两端，一起把它放好。"}, {"kind": "cross", "en": ["Pip gives the bridge a gentle tap.", "It stays up!", "The little duck rolls across."], "zh": "皮普轻轻碰了碰小桥。桥稳稳的！小鸭顺利滚到了另一边。", "alt": "稳固的小桥连接两岸，小玩具鸭沿桥面滚动。"}, {"kind": "yay", "en": ["“We did it together!”", "“Thank you, Bo.”", "“You’re welcome, Pip.”"], "zh": "“我们一起做到了！”“谢谢你，波波。”“不客气，皮普。”", "alt": "两个朋友举起双手庆祝成功，小鸭已经到达另一边。"}, {"kind": "practice", "en": ["Can you help me?", "Let’s try together.", "We did it!"], "zh": "你能帮帮我吗？|我们一起试试。|我们成功啦！", "alt": "皮普和波波带着读者练习三个英文短句。"}, {"kind": "activity", "en": ["What will you build with a friend?", "A bridge? A house? Something new?"], "zh": "你想和朋友一起搭什么？一座桥？一间房子？还是别的新东西？", "alt": "积木搭成的小桥和小房子，中间留着一块空地，邀请孩子想象。"}, {"kind": "back", "en": ["A little bridge.", "A big team."], "zh": "小小的桥，大大的合作。", "alt": "皮普和波波并肩站着，小桥和小鸭在他们身边。"}]</script>
+</body>
+</html>
